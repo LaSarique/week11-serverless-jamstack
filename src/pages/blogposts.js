@@ -11,7 +11,7 @@ const BlogPosts = ({ data }) => {
       <div className="blogposts">
         {blogPosts.map(({ node: post }) => (
           <div key={post.id}>
-            <Link to={`/blogpost/${post.slug}`}>{post.title}</Link>
+            <Link to={`/blogpost/${post.slugs}`}>{post.title}</Link>
           </div>
         ))}
         <span className="mgBtm__24" />
